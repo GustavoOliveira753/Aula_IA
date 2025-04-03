@@ -2,7 +2,7 @@ def carregarAlunos():
     alunos = []
     notas = []
 
-    for i in range(5):
+    for i in range(1):
         nome = input("Digite o nome do aluno: ")
         nota = float(input("Digite a nota do aluno: "))
         print()
