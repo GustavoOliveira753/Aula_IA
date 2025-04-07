@@ -38,4 +38,6 @@ print("Nomes e sobrenomes:")
 nomesFormat = (f'{nome.split()[0].capitalize()} {nome.split()[-1].capitalize()}' for nome in nomesArr)
 for nome in nomesFormat:
     print(nome)
-nomesAbreviados = [f'{partes[0].capitalize()} '+" ".join([f"{p[0].capitalize()}" for p in partes[1:-1]])+f" {partes[-1].capitalize()}" for nomes in nomesArr for partes in [nomes.split()]]
+nomesAbreviados = (f"{partes[0].capitalize()} " + ''.join([f"{p[0].capitalize()}. " for p in partes[1:-1]]) + f" {partes[-1].capitalize()}"for nome in nomesArr for partes in [nome.split()])
+for nomes in nomesAbreviados:
+    print(nomes)
