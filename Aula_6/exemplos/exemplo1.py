@@ -1,0 +1,10 @@
+arquivo = open("Aula_6/aula.txt","w")
+nome = input("Ditie o nome do aluno: ")
+arquivo.write(nome + '\n')
+nota1 = input("Digite a nota 1 do aluno: ")
+arquivo.write(nota1 + '\n')
+nota2 = input("Digite a nota 2: ")
+arquivo.write(nota2)
+arquivo.close()
+
+print("Arquivo gerado com sucesso !")
